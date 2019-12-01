@@ -1,0 +1,104 @@
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    background-color: darkolivegreen;
+    width: 100%;
+    box-shadow: 5px wheat 
+    
+}
+#navlist {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+    width: 300px;
+    color: wheat;
+  
+    
+}
+.navlist{
+    display: block;
+    padding: 10px;
+    
+}
+
+
+li {
+    list-style: none;
+}
+body{
+    margin: 0%;
+}
+.navlist a:hover {
+    
+    background: whitesmoke}
+
+    a {
+    text-decoration: none;
+    color: wheat;
+    
+    }
+#welcome-section{
+    height: 100vh;
+    width: 100%;
+    background-color: dimgray;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: wheat;
+    font-weight: bold;
+    text-shadow: 5px 5px darkolivegreen;
+
+}
+#project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+ 
+  
+}
+@media (max-width: 100px) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  body{
+      background-color: darkolivegreen;
+  }
+  h2{
+    font-size: 40px;
+    color: wheat;
+    font-weight: bold;
+    text-shadow: 5px 5px dimgray;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer{
+    font-size: 40px;
+    color: wheat;
+    font-weight: bold;
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    border-radius: 10px;
+  }
+  #bio{
+    background-color: black;
+      border-style: solid wheat;
+      border: 10px
+      
+  }
