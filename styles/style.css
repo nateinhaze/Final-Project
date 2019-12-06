@@ -54,13 +54,14 @@ body{
 
 }
 #project-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 4rem;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
+  
  
   
 }
@@ -102,3 +103,12 @@ body{
       border: 10px
       
   }
+ .marginz{
+   width: 100%;
+   display: flex;
+   align-content: center;
+
+ }
+ .project-title{
+   padding-left: 10%;
+ }
