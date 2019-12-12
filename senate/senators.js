@@ -19,7 +19,7 @@ const theData = getAPIData('senators.json').then(data => {
 const container = document.querySelector('.container')
 
 
-
+//filling the card
 function populateDOM(senator_array) {
         senator_array.forEach(senator => {
         let card = document.createElement('div')
@@ -27,9 +27,10 @@ function populateDOM(senator_array) {
         let cardImage = document.createElement('div')
         cardImage.setAttribute('class', 'card-image')
         let figure = document.createElement('figure')
-        figure.setAttribute('class', 'image is-4by3')
+        figure.setAttribute('class', 'image')
         let figureImage = document.createElement('img')
         let imageSource = `https://www.congress.gov/img/member/${senator.id.toLowerCase()}_200.jpg`
+        //I found link to dougs picture then used if statement to replace
         if (imageSource === 'https://www.congress.gov/img/member/j000300_200.jpg') imageSource = 'https://www.congress.gov/img/member/115_sr_al_jones_doug_200.jpg' 
         figureImage.src = imageSource
         figure.appendChild(figureImage)
@@ -59,13 +60,13 @@ function cardContent(senator) {
     titleP.textContent = senator.first_name + " " + senator.last_name + " (" + senator.party + ")"
     let subtitleP = document.createElement('p')
     subtitleP.setAttribute('class', 'subtitle is-6')
-    //creating 
+    //creating the "a" for link
     let stateLink =document.createElement('a')
     stateLink.text = GetStateName(senator.state)
     stateLink.href =CreateStateURL(senator.state)
     subtitleP.appendChild(stateLink)
     
-
+    //filling out the rest of card from what we learned in class
     mediaContent.appendChild(titleP)
     mediaContent.appendChild(subtitleP)
     figure.appendChild(img)
@@ -78,16 +79,20 @@ function cardContent(senator) {
 
 
 }
+//creating the right url
 function CreateStateURL(state_abbrev)
+//changed to uppercase then replaced space for -, so url would work
 {
     var URLstring = "https://www.usa.gov/state-government/" + GetStateName(state_abbrev.toUpperCase()).toLowerCase().replace(" ", "-");
     return URLstring;
 }
 
 
-//Getting the full state name
+//Getting the full state name probably the most complicated way haha
 function GetStateName(state_abbrev)
 {
+    //my father helped me with this using switch 
+    //so pretty much how it works is it switched out the abbrevated version for the full name, using "case" then you add a "break" to end the code 
     var state_name = ""
     switch (state_abbrev)
     {
@@ -248,7 +253,7 @@ function GetStateName(state_abbrev)
 
     return state_name;
 }
-
+//using "if" to return the party picture
 function GetPartyImage(party)
 {
     if (party == 'R')
