@@ -36,6 +36,7 @@ body{
     padding: 20px;
     background-color: dimgray;
     color: gold;
+    
   }
   
 
@@ -74,6 +75,8 @@ body{
     footer {
       flex-direction: column;
       text-align: center;
+      box-shadow: 0px 10px 5px;
+      background-color: darkolivegreen;
     }
   }
   body{
@@ -92,13 +95,15 @@ body{
     padding: 2%;
     border-right: solid 40px dimgray;
    border-left: solid 40px dimgray;
+   
     
   }
   footer{
     font-size: 40px;
     color: wheat;
     font-weight: bold;
-    
+    box-shadow: 0px -2px 10px black;
+    text-shadow: 5px 5px dimgray;
     text-align: center;
     display: flex;
     align-items: center;
@@ -110,7 +115,8 @@ body{
   #bio{
     background-color: black;
       border-style: solid wheat;
-      border: 10px
+      border: 10px;
+      background-color: darkolivegreen;
       
   }
  .marginz{
@@ -128,6 +134,7 @@ body{
    width: 250px;
    height: 250px;
    margin-top: 50px;
+   margin-bottom: 50px;
    
  }
  .info-title{
@@ -142,6 +149,7 @@ body{
  figure{
    display: flex;
   align-content: center;
+  
  }
  figcaption{
   font-size:2rem;
@@ -153,7 +161,26 @@ body{
   padding-bottom: 20px;
   border-right: solid 10px dimgray;
   
+  
  
   
   
+ }
+ .info-{
+   border-top: solid 20px dimgray;
+   
+ }
+ p{
+  font-size: 30px;
+  color: wheat;
+  font-weight: bold;
+  text-shadow: 2.5px 2.5px dimgray;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  padding: 2%;
+  border-right: solid 40px dimgray;
+ border-left: solid 40px dimgray;
  }
